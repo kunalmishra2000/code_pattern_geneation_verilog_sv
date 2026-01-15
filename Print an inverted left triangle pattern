@@ -1,0 +1,21 @@
+//3. Print an inverted left triangle pattern
+
+module tab;
+  
+  
+  initial begin
+    for(int i=5; i>0; i--)begin //outer loop
+      for( int j=0; j<i; j++)begin  //innner loop
+              $write("*");
+      end
+                    $display();
+
+    end
+  end
+endmodule 
+
+***** 
+**** 
+*** 
+** 
+* 
