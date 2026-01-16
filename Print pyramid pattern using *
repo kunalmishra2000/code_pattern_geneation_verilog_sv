@@ -1,0 +1,44 @@
+//Print pyramid pattern using *
+
+module tab;
+  
+  initial begin
+//     for( int j=0; j<4; j++)begin  //outer loop
+//       for(int i=0; i<(7-j-1); i++)begin //innner loop         // print spaces //work first print how many space need on index  zero
+
+     
+//           $write(" ");
+//       end
+//       for(int i=0; i<(2*j+1); i++)begin //innner loop         // print star  //it's decide how many star we print on index zero after space like index=0 need four 4 spcae and 1 star  ____*
+//            $write("*");
+
+//       end
+//              $display();
+//     end
+    //oher method 
+for (int i = 0; i < 4; i++) begin       // rows
+  for (int j = 0; j < 7; j++) begin    // columns
+    if (j < (3 - i) || j > (3 + i))
+      $write(" ");
+    else
+      $write("*");
+  end
+  $display();
+end
+    
+//     // use if and else condition
+//     //other method
+//     for( int i=0; i<4; i++)begin  //outer loop
+//       for(int j=0; j<8; j++)begin
+//         if (j>=(4-i) && j<=(4+i))
+//           $write("*");
+//         else
+        
+//         $write(" ");
+//       end
+//       $display();
+//     end
+      
+
+  end
+endmodule 
