@@ -1,0 +1,19 @@
+//Print inverted pyramid pattern
+
+
+module tab;
+   
+  
+  initial begin
+    // this conditon space on star logic
+    for(int i=4; i>0; i--)begin // outer_loop  this called Row
+      for(int j=0; j<7; j++)begin //inner loop
+        if(j>(3-i) && j<(3+i))
+           $write("*");
+           else
+             $write(" ");
+           end
+           $display();
+           end
+           end
+           endmodule 
