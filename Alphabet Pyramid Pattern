@@ -1,0 +1,27 @@
+//16. Alphabet Pyramid Pattern
+
+module tab;
+  
+  
+  initial begin
+    
+
+    
+    for(int i=0; i<5; i++)begin
+      for(int j=0; j<5-i; j++)begin
+          $write(" ");
+      end
+      for(int k=0; k<=i; k++)begin     
+           
+        
+        $write("%c ",65 + k); // display chara like a,b,c,...z
+      end
+  
+        
+      
+      $display();
+    end
+    
+
+    end
+    endmodule 
