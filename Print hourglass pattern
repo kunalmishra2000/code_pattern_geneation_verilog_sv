@@ -1,0 +1,36 @@
+//Print hourglass pattern
+module tab;
+  
+  
+  initial begin
+    
+    for(int i=4; i>=0; i--)begin
+      for(int j=0; j<=4;j++)begin
+        if(j<(3-i))
+        $write(" ");
+      end
+      for(int k=0; k<=i; k++)begin
+        $write("* ");
+       
+        
+      end
+      $display();
+    end
+    
+    
+    for(int i=0; i<=4; i++)begin
+      for(int j=0; j<=4;j++)begin
+        if(j<(3-i))
+        $write(" ");
+      end
+      for(int k=0; k<=i; k++)begin
+        $write("* ");
+       
+        
+      end
+      $display();
+    end
+    
+
+    end
+    endmodule 
